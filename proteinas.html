@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síntese de Proteínas nos Ribossomos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #sidebar-header h1 { color: #44aaff; }
+        .structure-item input[type="checkbox"]:checked { background: #44aaff; border-color: #44aaff; }
+        #info-name { color: #44aaff; }
+        .btn-primary { background: #3a9aee; border-color: #3a9aee; }
+        .btn-primary:hover { background: #44aaff; }
+        #speed-controls { display: flex; gap: 6px; padding: 8px 16px 4px; border-top: 1px solid var(--border-color); flex-shrink: 0; align-items: center; }
+        #speed-controls span { font-size: 11px; color: var(--text-secondary); margin-right: 4px; }
+        .speed-btn { flex: 1; padding: 5px 4px; border: 1px solid var(--border-color); border-radius: 4px; background: transparent; color: var(--text-secondary); font-size: 10px; font-weight: 600; cursor: pointer; transition: all 0.15s; text-align: center; }
+        .speed-btn:hover { border-color: var(--accent); color: var(--text-primary); }
+        .speed-btn.active { background: #44aaff; border-color: #44aaff; color: white; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <button id="toggle-sidebar" title="Alternar painel">☰</button>
+    <aside id="sidebar">
+        <div id="sidebar-header">
+            <h1>🧬 Síntese de Proteínas</h1>
+            <div class="subtitle">Tradução do mRNA nos ribossomos</div>
+        </div>
+        <div id="structure-list"></div>
+        <div id="speed-controls">
+            <span>Veloc:</span>
+            <button class="speed-btn" data-speed="0.5">0.5×</button>
+            <button class="speed-btn active" data-speed="1">1×</button>
+            <button class="speed-btn" data-speed="3">3×</button>
+            <button class="speed-btn" data-speed="10">10×</button>
+        </div>
+        <div id="btn-group"></div>
+    </aside>
+    <div id="info-panel">
+        <div id="info-name"></div>
+        <div id="info-description"></div>
+        <div id="info-function"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="proteinas.js"></script>
+</body>
+</html>

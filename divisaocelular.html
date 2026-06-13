@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão Celular: Mitose e Meiose</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #sidebar-header h1 { color: #ff66aa; }
+        .structure-item input[type="checkbox"]:checked { background: #ff66aa; border-color: #ff66aa; }
+        #info-name { color: #ff66aa; }
+        .btn-primary { background: #ee5599; border-color: #ee5599; }
+        .btn-primary:hover { background: #ff66aa; }
+        #speed-controls { display: flex; gap: 6px; padding: 8px 16px 4px; border-top: 1px solid var(--border-color); flex-shrink: 0; align-items: center; }
+        #speed-controls span { font-size: 11px; color: var(--text-secondary); margin-right: 4px; }
+        .speed-btn { flex: 1; padding: 5px 4px; border: 1px solid var(--border-color); border-radius: 4px; background: transparent; color: var(--text-secondary); font-size: 10px; font-weight: 600; cursor: pointer; transition: all 0.15s; text-align: center; }
+        .speed-btn:hover { border-color: var(--accent); color: var(--text-primary); }
+        .speed-btn.active { background: #ff66aa; border-color: #ff66aa; color: white; }
+        #mode-selector { display: flex; gap: 6px; padding: 8px 16px 4px; border-top: 1px solid var(--border-color); flex-shrink: 0; }
+        .mode-btn { flex: 1; padding: 7px 10px; border: 1px solid var(--border-color); border-radius: 6px; background: transparent; color: var(--text-secondary); font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; text-align: center; letter-spacing: 0.3px; }
+        .mode-btn:hover { border-color: #ff66aa; color: var(--text-primary); }
+        .mode-btn.active { background: #ff66aa; border-color: #ff66aa; color: white; }
+        #stage-indicator { position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 15; background: rgba(26,26,62,0.85); border: 1px solid var(--border-color); border-radius: 10px; padding: 10px 22px; backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0,0,0,0.4); text-align: center; transition: opacity 0.3s; pointer-events: none; }
+        #stage-name { font-size: 18px; font-weight: 700; color: #ff66aa; letter-spacing: 0.5px; }
+        #stage-desc { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+        .stage-progress { display: flex; gap: 6px; justify-content: center; margin-top: 6px; }
+        .stage-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border-color); transition: all 0.3s; }
+        .stage-dot.active { background: #ff66aa; box-shadow: 0 0 8px rgba(255,102,170,0.5); }
+        .stage-dot.done { background: #ff66aa; opacity: 0.4; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <button id="toggle-sidebar" title="Alternar painel">☰</button>
+    <div id="stage-indicator">
+        <div id="stage-name">Prófase</div>
+        <div id="stage-desc">Condensação dos cromossomos</div>
+        <div class="stage-progress" id="stage-progress"></div>
+    </div>
+    <aside id="sidebar">
+        <div id="sidebar-header">
+            <h1>🔬 Divisão Celular</h1>
+            <div class="subtitle">Mitose e Meiose em 3D</div>
+        </div>
+        <div id="mode-selector">
+            <button class="mode-btn active" data-mode="mitose">Mitose</button>
+            <button class="mode-btn" data-mode="meiose">Meiose</button>
+        </div>
+        <div id="structure-list"></div>
+        <div id="speed-controls">
+            <span>Veloc:</span>
+            <button class="speed-btn" data-speed="0.5">0.5×</button>
+            <button class="speed-btn active" data-speed="1">1×</button>
+            <button class="speed-btn" data-speed="3">3×</button>
+            <button class="speed-btn" data-speed="10">10×</button>
+        </div>
+        <div id="btn-group"></div>
+    </aside>
+    <div id="info-panel">
+        <div id="info-name"></div>
+        <div id="info-description"></div>
+        <div id="info-function"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="divisaocelular.js"></script>
+</body>
+</html>
