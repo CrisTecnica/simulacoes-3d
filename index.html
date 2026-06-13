@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulações 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hub-body">
+
+    <div id="hub-container">
+        <header id="hub-header">
+            <h1>🔬 Simulações Científicas 3D</h1>
+            <p>Selecione uma simulação para explorar</p>
+        </header>
+
+        <div id="sim-grid"></div>
+
+        <button id="add-sim-btn">+ Nova Simulação</button>
+    </div>
+
+    <div id="modal-overlay" class="hidden">
+        <div id="modal">
+            <h2>Nova Simulação</h2>
+            <form id="sim-form">
+                <label>Título *<input type="text" id="f-title" required></label>
+                <label>Ícone (emoji) *<input type="text" id="f-icon" required placeholder="ex: 🧫"></label>
+                <label>Descrição<textarea id="f-desc" rows="2" placeholder="Breve descrição da simulação"></textarea></label>
+                <label>Arquivo HTML *<input type="text" id="f-file" required placeholder="ex: nova.html"></label>
+                <label>Cor<label class="color-wrap"><input type="color" id="f-color" value="#6c5ce7"></label></label>
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                    <button type="button" id="modal-close" class="btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="hub.js"></script>
+</body>
+</html>

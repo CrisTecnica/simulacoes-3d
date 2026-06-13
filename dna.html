@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação 3D de DNA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #sidebar-header h1 { color: #00e5ff; }
+        .structure-item input[type="checkbox"]:checked { background: #00e5ff; border-color: #00e5ff; }
+        #info-name { color: #00e5ff; }
+        .btn-primary { background: #00bcd4; border-color: #00bcd4; }
+        .btn-primary:hover { background: #00e5ff; }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <button id="toggle-sidebar" title="Alternar painel">☰</button>
+
+    <aside id="sidebar">
+        <div id="sidebar-header">
+            <h1>🧬 Dupla Hélice de DNA</h1>
+            <div class="subtitle">Clique em um componente para detalhes</div>
+        </div>
+        <div id="structure-list"></div>
+        <div id="btn-group"></div>
+    </aside>
+
+    <div id="info-panel">
+        <div id="info-name"></div>
+        <div id="info-description"></div>
+        <div id="info-function"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="dna.js"></script>
+</body>
+</html>
