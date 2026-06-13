@@ -41,6 +41,14 @@ const DEFAULT_SIMS = [
     file: 'eclipse.html',
     color: '#ff6b00',
   },
+  {
+    id: 'galaxias',
+    title: 'Galáxias: Formação e Colisão',
+    icon: '🌀',
+    description: 'Galáxias espirais com 15.000 estrelas, colisão entre galáxias e agrupamentos',
+    file: 'galaxias.html',
+    color: '#7c4dff',
+  },
 ];
 
 function loadUserSims() {
