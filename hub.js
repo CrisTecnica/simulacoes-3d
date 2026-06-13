@@ -265,6 +265,22 @@ const DEFAULT_SIMS = [
     file: 'espectros.html',
     color: '#ff44ff',
   },
+  {
+    id: 'tectonica',
+    title: 'Tectônica de Placas',
+    icon: '🌍',
+    description: 'Movimento divergente, convergente, transformante e subducção',
+    file: 'tectonica.html',
+    color: '#ff8844',
+  },
+  {
+    id: 'terra',
+    title: 'Estrutura Interna da Terra',
+    icon: '🌍',
+    description: 'Crosta, manto, núcleo externo e interno em corte transversal',
+    file: 'terra.html',
+    color: '#ff6622',
+  },
 ];
 
 function loadUserSims() {
