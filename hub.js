@@ -57,6 +57,30 @@ const DEFAULT_SIMS = [
     file: 'buracosnegros.html',
     color: '#ff0055',
   },
+  {
+    id: 'vialactea',
+    title: 'Movimento de Estrelas na Via Láctea',
+    icon: '🌌',
+    description: 'Braços espirais, bojo galáctico, halo estelar e aglomerados globulares',
+    file: 'vialactea.html',
+    color: '#4488ff',
+  },
+  {
+    id: 'missoes',
+    title: 'Missões Espaciais Históricas',
+    icon: '🚀',
+    description: 'Trajetórias de Apollo 11, Voyager, Cassini, Hubble, ISS e mais 9 missões',
+    file: 'missoes.html',
+    color: '#ff8800',
+  },
+  {
+    id: 'campograv',
+    title: 'Campo Gravitacional e Órbitas',
+    icon: '🌍',
+    description: 'Poço gravitacional, órbitas de satélites e simulação N-corpos',
+    file: 'campograv.html',
+    color: '#44dd88',
+  },
 ];
 
 function loadUserSims() {
