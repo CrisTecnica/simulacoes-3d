@@ -169,6 +169,38 @@ const DEFAULT_SIMS = [
     file: 'colisoes.html',
     color: '#ff6644',
   },
+  {
+    id: 'projetil',
+    title: 'Movimento de Projéteis',
+    icon: '🎯',
+    description: 'Lançamento oblíquo com/sem resistência do ar, ângulo e velocidade ajustáveis',
+    file: 'projetil.html',
+    color: '#ff8800',
+  },
+  {
+    id: 'optica',
+    title: 'Óptica Geométrica 3D',
+    icon: '🔦',
+    description: 'Lentes convexas, côncavas, espelhos e prismas com raios de luz',
+    file: 'optica.html',
+    color: '#00ddff',
+  },
+  {
+    id: 'relatividade',
+    title: 'Relatividade Especial',
+    icon: '⚡',
+    description: 'Contração de Lorentz, dilatação temporal e cone de luz',
+    file: 'relatividade.html',
+    color: '#aa44ff',
+  },
+  {
+    id: 'decaimento',
+    title: 'Decaimento Radioativo',
+    icon: '☢️',
+    description: 'Decaimento alfa, beta e gama com simulação estatística de meia-vida',
+    file: 'decaimento.html',
+    color: '#44ff88',
+  },
 ];
 
 function loadUserSims() {

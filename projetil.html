@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Movimento de Projéteis</title><link rel="stylesheet" href="style.css">
+<style>#sidebar-header h1{color:#ff8800}.structure-item input[type="checkbox"]:checked{background:#ff8800;border-color:#ff8800}#info-name{color:#ff8800}.btn-primary{background:#ff8800;border-color:#ff8800}.btn-primary:hover{background:#ffaa44}#proj-mode{width:100%;padding:8px 10px;border:1px solid var(--border-color);border-radius:8px;background:var(--bg-secondary);color:var(--text-primary);font-size:12px;cursor:pointer;margin-bottom:8px}#proj-mode:focus{border-color:#ff8800}#angle-slider,#vel-slider{width:100%;margin:4px 0 8px;-webkit-appearance:none;height:4px;border-radius:2px;background:var(--border-color);outline:none}#angle-slider::-webkit-slider-thumb,#vel-slider::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:#ff8800;cursor:pointer}.slabel{font-size:10px;color:#8888bb;margin:4px 0 2px;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div id="canvas-container"></div><button id="toggle-sidebar">☰</button>
+<aside id="sidebar">
+<div id="sidebar-header"><h1>🎯 Projéteis</h1><div class="subtitle">Movimento com resistência do ar</div></div>
+<div style="padding:12px 20px 8px;">
+<select id="proj-mode"><option value="normal">Sem Resistência</option><option value="air">Com Resistência do Ar</option><option value="comparar">Comparar Ambos</option></select>
+<div class="slabel"><span>Ângulo</span><span id="angle-val">45°</span></div><input type="range" id="angle-slider" min="5" max="85" value="45">
+<div class="slabel"><span>Velocidade</span><span id="vel-val">20 m/s</span></div><input type="range" id="vel-slider" min="5" max="40" value="20">
+</div>
+<div id="structure-list"></div>
+<div id="btn-group"></div>
+</aside>
+<div id="info-panel"><div id="info-name"></div><div id="info-description"></div><div id="info-function"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+<script src="projetil.js"></script>
+</body>
+</html>
