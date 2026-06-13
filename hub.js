@@ -33,6 +33,14 @@ const DEFAULT_SIMS = [
     file: 'exoplanetas.html',
     color: '#7c4dff',
   },
+  {
+    id: 'eclipse',
+    title: 'Eclipses Solares e Lunares',
+    icon: '🌑',
+    description: 'Observe o alinhamento Sol-Terra-Lua com cone de sombra e raios de luz',
+    file: 'eclipse.html',
+    color: '#ff6b00',
+  },
 ];
 
 function loadUserSims() {
