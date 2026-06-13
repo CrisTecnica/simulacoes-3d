@@ -225,6 +225,46 @@ const DEFAULT_SIMS = [
     file: 'ligacoes.html',
     color: '#88ddff',
   },
+  {
+    id: 'acidobase',
+    title: 'Reações Ácido-Base',
+    icon: '🧪',
+    description: 'Íons H+ e OH- neutralizando com indicador de pH',
+    file: 'acidobase.html',
+    color: '#ff44aa',
+  },
+  {
+    id: 'cristalizacao',
+    title: 'Cristalização',
+    icon: '💎',
+    description: 'Formação de redes cristalinas iônicas em 3D',
+    file: 'cristalizacao.html',
+    color: '#88ddff',
+  },
+  {
+    id: 'polimeros',
+    title: 'Formação de Polímeros',
+    icon: '🧬',
+    description: 'Monômeros se ligando em cadeias poliméricas',
+    file: 'polimeros.html',
+    color: '#ffaa44',
+  },
+  {
+    id: 'cinetica',
+    title: 'Cinética Química',
+    icon: '⚗️',
+    description: 'Velocidade de reação ajustando temperatura e concentração',
+    file: 'cinetica.html',
+    color: '#44ffaa',
+  },
+  {
+    id: 'espectros',
+    title: 'Espectros Atômicos',
+    icon: '🌈',
+    description: 'Linhas espectrais de H, He, Na, Fe e Ne em 3D',
+    file: 'espectros.html',
+    color: '#ff44ff',
+  },
 ];
 
 function loadUserSims() {
