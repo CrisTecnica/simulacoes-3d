@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Campo Elétrico e Magnético 3D</title>
+<link rel="stylesheet" href="style.css">
+<style>#sidebar-header h1{color:#ffcc00}.structure-item input[type="checkbox"]:checked{background:#ffcc00;border-color:#ffcc00}#info-name{color:#ffcc00}.btn-primary{background:#ffcc00;border-color:#ffcc00}.btn-primary:hover{background:#ffdd44}#ce-mode{width:100%;padding:8px 10px;border:1px solid var(--border-color);border-radius:8px;background:var(--bg-secondary);color:var(--text-primary);font-size:12px;cursor:pointer;margin-bottom:8px}#ce-mode:focus{border-color:#ffcc00}</style>
+</head>
+<body>
+<div id="canvas-container"></div>
+<button id="toggle-sidebar">☰</button>
+<aside id="sidebar">
+<div id="sidebar-header"><h1>⚡ Campos Eletromagnéticos</h1><div class="subtitle">Campo elétrico, magnético e eletromagnético em 3D</div></div>
+<div style="padding:12px 20px 8px;"><select id="ce-mode"><option value="eletrico">Campo Elétrico</option><option value="magnetico">Campo Magnético</option><option value="eletromagnetico">Onda Eletromagnética</option></select></div>
+<div id="structure-list"></div>
+<div id="btn-group"></div>
+</aside>
+<div id="info-panel"><div id="info-name"></div><div id="info-description"></div><div id="info-function"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+<script src="campoeletrico.js"></script>
+</body>
+</html>

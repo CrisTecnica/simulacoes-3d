@@ -137,6 +137,38 @@ const DEFAULT_SIMS = [
     file: 'celulavegetal.html',
     color: '#44cc44',
   },
+  {
+    id: 'pendulos',
+    title: 'Pêndulo Simples e Duplo',
+    icon: '⏱️',
+    description: 'Oscilação de pêndulos simples, duplo e triplo com trajetórias',
+    file: 'pendulos.html',
+    color: '#44ccff',
+  },
+  {
+    id: 'ondas',
+    title: 'Interferência de Ondas',
+    icon: '🌊',
+    description: 'Fontes coerentes, fenda dupla e padrões de interferência 3D',
+    file: 'ondas.html',
+    color: '#00ccff',
+  },
+  {
+    id: 'campoeletrico',
+    title: 'Campos Eletromagnéticos 3D',
+    icon: '⚡',
+    description: 'Campo elétrico, magnético e onda eletromagnética em 3D',
+    file: 'campoeletrico.html',
+    color: '#ffcc00',
+  },
+  {
+    id: 'colisoes',
+    title: 'Colisões entre Partículas',
+    icon: '💥',
+    description: 'Colisão elástica, inelástica e simulação de múltiplas partículas',
+    file: 'colisoes.html',
+    color: '#ff6644',
+  },
 ];
 
 function loadUserSims() {
