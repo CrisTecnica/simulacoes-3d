@@ -201,6 +201,30 @@ const DEFAULT_SIMS = [
     file: 'decaimento.html',
     color: '#44ff88',
   },
+  {
+    id: 'moleculas',
+    title: 'Estruturas Moleculares 3D',
+    icon: '🧪',
+    description: 'Visualize H2O, CO2, CH4, NH3, Benzeno e Etanol em 3D',
+    file: 'moleculas.html',
+    color: '#ff6688',
+  },
+  {
+    id: 'difusao',
+    title: 'Difusão de Moléculas',
+    icon: '💨',
+    description: 'Difusão simples, osmose e efeito da temperatura em partículas',
+    file: 'difusao.html',
+    color: '#44aaff',
+  },
+  {
+    id: 'ligacoes',
+    title: 'Ligações Químicas',
+    icon: '⚗️',
+    description: 'Ligações iônicas, covalentes, metálicas e pontes de hidrogênio',
+    file: 'ligacoes.html',
+    color: '#88ddff',
+  },
 ];
 
 function loadUserSims() {
