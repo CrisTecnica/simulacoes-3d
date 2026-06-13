@@ -49,6 +49,14 @@ const DEFAULT_SIMS = [
     file: 'galaxias.html',
     color: '#7c4dff',
   },
+  {
+    id: 'buracosnegros',
+    title: 'Buracos Negros e Discos de Acreção',
+    icon: '🕳️',
+    description: 'Disco de acreção, anel de fótons, jatos relativísticos e sistema binário',
+    file: 'buracosnegros.html',
+    color: '#ff0055',
+  },
 ];
 
 function loadUserSims() {

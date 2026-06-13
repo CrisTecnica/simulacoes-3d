@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Buracos Negros e Discos de Acreção</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #sidebar-header h1{color:#ff0055}
+        .structure-item input[type="checkbox"]:checked{background:#ff0055;border-color:#ff0055}
+        #info-name{color:#ff0055}
+        .btn-primary{background:#ff0055;border-color:#ff0055}
+        .btn-primary:hover{background:#ff3377}
+        #bh-mode{width:100%;padding:8px 10px;border:1px solid var(--border-color);border-radius:8px;background:var(--bg-secondary);color:var(--text-primary);font-size:12px;cursor:pointer;margin-bottom:8px}
+        #bh-mode:focus{border-color:#ff0055}
+        #cam-speed{width:100%;padding:8px 10px;border:1px solid var(--border-color);border-radius:8px;background:var(--bg-secondary);color:var(--text-primary);font-size:12px;cursor:pointer;margin-bottom:8px}
+        #cam-speed:focus{border-color:#ff0055}
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <button id="toggle-sidebar" title="Alternar painel">☰</button>
+    <aside id="sidebar">
+        <div id="sidebar-header"><h1>🕳️ Buracos Negros</h1><div class="subtitle">Discos de acreção e jatos relativísticos</div></div>
+        <div style="padding:12px 20px 8px;">
+            <select id="bh-mode"><option value="stellar">Buraco Estelar</option><option value="supermassive">Buraco Supermassivo</option><option value="binary">Sistema Binário</option></select>
+            <select id="cam-speed" style="margin-top:6px"><option value="0.3">Câmera Lenta</option><option value="1" selected>Normal</option><option value="3">Rápida</option><option value="6">Turbo</option></select>
+        </div>
+        <div id="structure-list"></div>
+        <div id="btn-group"></div>
+    </aside>
+    <div id="info-panel"><div id="info-name"></div><div id="info-description"></div><div id="info-function"></div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="buracosnegros.js"></script>
+</body>
+</html>
